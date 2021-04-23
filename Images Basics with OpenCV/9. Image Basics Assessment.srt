@@ -1,0 +1,248 @@
+﻿1
+00:00:05,290 --> 00:00:06,230
+Welcome back.
+
+2
+00:00:06,370 --> 00:00:10,200
+Let's complete this section with a quick assessment of your new skills.
+
+3
+00:00:10,330 --> 00:00:11,510
+Let's open up the notebook.
+
+4
+00:00:11,560 --> 00:00:17,620
+The note book is called zero for Dash image basics dash assessment and the next lecture will go over
+
+5
+00:00:17,650 --> 00:00:19,780
+the corresponding solutions notebook.
+
+6
+00:00:19,990 --> 00:00:22,640
+Let's get started with a quick review of the assessment.
+
+7
+00:00:22,810 --> 00:00:27,340
+OK when you open your notebook it should look something like this and basically just says always you're
+
+8
+00:00:27,340 --> 00:00:31,090
+going to have a bunch of tasks in bold that you need to complete.
+
+9
+00:00:31,120 --> 00:00:37,720
+So the first task is to open the dog underscore backpack that shape pick image that is located in the
+
+10
+00:00:37,750 --> 00:00:41,770
+data folder that goes along this course and display in the notebook.
+
+11
+00:00:41,770 --> 00:00:47,870
+And I've shown a little hint here that I want you to make sure you correct the R.G. order.
+
+12
+00:00:47,950 --> 00:00:51,800
+So if you open up the dog backpack a peg and try to display it right off the bat.
+
+13
+00:00:51,880 --> 00:00:55,290
+Remember that the coloring of red and blue may be switched.
+
+14
+00:00:55,290 --> 00:01:00,410
+Sure can one make sure that you read it in the correct order and use open C-v to correct for that number
+
+15
+00:01:00,430 --> 00:01:04,960
+we show you the function for that that I want you to flip the image upside down and display it in the
+
+16
+00:01:04,960 --> 00:01:11,140
+notebook that I want you to draw an empty red triangle around the dog's face.
+
+17
+00:01:11,140 --> 00:01:13,240
+So here's what the dog looks like.
+
+18
+00:01:13,390 --> 00:01:18,780
+And then scroll down I draw a red rectangle around the dog's face.
+
+19
+00:01:18,790 --> 00:01:20,770
+So here's the dog with the rectangle.
+
+20
+00:01:20,860 --> 00:01:22,750
+And then here is now the rectangle.
+
+21
+00:01:22,750 --> 00:01:27,490
+It doesn't have to be perfectly centered around Doc's face but you can kind of guesstimate given the
+
+22
+00:01:27,550 --> 00:01:33,210
+x vector axis and the Y dimensions here where the actual corners should go.
+
+23
+00:01:33,400 --> 00:01:38,620
+So again this task just draw an empty red rectangle around the dog's face and display the image in that
+
+24
+00:01:38,630 --> 00:01:39,270
+notebook.
+
+25
+00:01:40,860 --> 00:01:45,030
+Then the next task is to draw a blue triangle in the middle of the image.
+
+26
+00:01:45,060 --> 00:01:48,840
+So kind of centered around the dog's face just as it were roughly in the middle of the image.
+
+27
+00:01:48,870 --> 00:01:50,280
+It can be lower it can be higher.
+
+28
+00:01:50,280 --> 00:01:52,590
+So don't worry too much about these exact points.
+
+29
+00:01:52,590 --> 00:01:57,150
+I just want you to be able to kind of guesstimate somewhere on the image and then draw the triangle
+
+30
+00:01:57,150 --> 00:01:57,940
+there.
+
+31
+00:01:57,990 --> 00:02:01,230
+So remember the size and angle of the triangle is up to you.
+
+32
+00:02:01,230 --> 00:02:04,860
+Here I made it in equal lateral triangle so all three sides of the same.
+
+33
+00:02:04,860 --> 00:02:09,350
+That's what was easiest that way these bottom points actually have the same height.
+
+34
+00:02:09,360 --> 00:02:12,810
+So along the y axis These are both around looks like 700.
+
+35
+00:02:12,870 --> 00:02:15,500
+So that's a little hint to kind of help you out there.
+
+36
+00:02:15,630 --> 00:02:20,670
+Again just drawing a blue triangle in the middle of the image and then we have a bonus task and the
+
+37
+00:02:20,670 --> 00:02:24,610
+first task is can you figure out how to actually fill in this triangle.
+
+38
+00:02:24,630 --> 00:02:27,930
+It actually requires a different function that we didn't show in the lecture.
+
+39
+00:02:27,930 --> 00:02:32,190
+So you have to use your stack overflow and google skills in order to figure out how you would actually
+
+40
+00:02:32,190 --> 00:02:35,940
+fill in a polyline object term or.
+
+41
+00:02:36,120 --> 00:02:38,500
+You're going to use a polyline to actually build that out.
+
+42
+00:02:38,700 --> 00:02:42,170
+And then I want you to figure out how you can actually then fill it in.
+
+43
+00:02:42,210 --> 00:02:46,080
+And there's a link here that gives you really strong hints on how to do it in case you get stuck on
+
+44
+00:02:46,080 --> 00:02:46,540
+that.
+
+45
+00:02:46,620 --> 00:02:49,740
+Again that's a bonus tasks since we didn't exactly show you how to do that.
+
+46
+00:02:49,740 --> 00:02:53,610
+During the lectures and if you scroll down you actually have one more task.
+
+47
+00:02:53,760 --> 00:02:54,180
+Sorry.
+
+48
+00:02:54,200 --> 00:02:56,460
+That final before but for this task.
+
+49
+00:02:56,460 --> 00:03:01,920
+Note that you may need to run this as a script specifically for Mac OS or Linux user where you're going
+
+50
+00:03:01,920 --> 00:03:05,150
+to be doing is creating a script that opens the picture.
+
+51
+00:03:05,220 --> 00:03:09,930
+This dog backpack picture that is and allows you to draw empty red circles wherever you click the right
+
+52
+00:03:10,020 --> 00:03:11,260
+mouse button down.
+
+53
+00:03:11,550 --> 00:03:14,730
+Let's quickly show you what the finished product should look like here.
+
+54
+00:03:14,730 --> 00:03:18,900
+So if you finish that task at the end that should look something like this where you have the dog backpack
+
+55
+00:03:18,930 --> 00:03:19,340
+image.
+
+56
+00:03:19,380 --> 00:03:23,740
+And if I order right click anywhere I get to see these empty red circles.
+
+57
+00:03:24,080 --> 00:03:24,430
+OK.
+
+58
+00:03:24,480 --> 00:03:25,500
+So that's it.
+
+59
+00:03:25,500 --> 00:03:27,330
+Best of luck on the assessment.
+
+60
+00:03:27,330 --> 00:03:29,790
+Coming up next we're going to go over the solutions see other
+
+61
+00:05:11,330 --> 00:05:14,090
+OK coming up next we're going to go for the solutions.
+
+62
+00:05:14,090 --> 00:05:14,880
+I'll see it there.
+

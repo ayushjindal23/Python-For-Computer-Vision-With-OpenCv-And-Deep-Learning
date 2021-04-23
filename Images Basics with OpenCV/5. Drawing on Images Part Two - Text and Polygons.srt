@@ -1,0 +1,592 @@
+﻿1
+00:00:05,320 --> 00:00:08,670
+Welcome back to part two of drawing on images in part two.
+
+2
+00:00:08,680 --> 00:00:13,540
+We're going to show a simple example of writing text onto an image and we'll show you how you can create
+
+3
+00:00:13,540 --> 00:00:15,610
+your own custom polygons.
+
+4
+00:00:15,610 --> 00:00:18,010
+Let's jump over to the notebook and finish this off.
+
+5
+00:00:18,310 --> 00:00:21,220
+OK here we are at the notebook where we left off last time.
+
+6
+00:00:21,220 --> 00:00:23,590
+Now I'll show you how you can actually add in text.
+
+7
+00:00:23,680 --> 00:00:28,630
+So the way this works is you first have to decide on a font and you get to only choose fonts that are
+
+8
+00:00:28,630 --> 00:00:33,760
+built into CB2 and to be perfectly honest are not the best looking font in the world.
+
+9
+00:00:33,760 --> 00:00:39,910
+So if you start typing dot F O T and all caps and it tab you'll see the various thoughts that are available
+
+10
+00:00:39,910 --> 00:00:42,490
+to you and most of these actually look really similar.
+
+11
+00:00:42,520 --> 00:00:46,260
+So the simplest one is just font Hershey's simplex.
+
+12
+00:00:46,420 --> 00:00:49,590
+So let's we're going to choose and then we say C-v too.
+
+13
+00:00:49,720 --> 00:00:55,380
+And just like there was a rectangle and a circle command and a line command there is a text command.
+
+14
+00:00:55,870 --> 00:01:01,630
+And here the parameters go whatever image you want actually right on to the actual text you want to
+
+15
+00:01:01,630 --> 00:01:02,110
+write.
+
+16
+00:01:02,140 --> 00:01:07,550
+So in this case you precedent as a string we're going to say hello and then.
+
+17
+00:01:07,850 --> 00:01:12,970
+Oh R.G. which if you look at the documentation what that actually stands for is the bottom left corner
+
+18
+00:01:13,060 --> 00:01:15,040
+of the text string in the image.
+
+19
+00:01:15,040 --> 00:01:19,900
+So you can kind of think of the text going into a box and the bottom left corner of that text start
+
+20
+00:01:19,900 --> 00:01:21,220
+somewhere.
+
+21
+00:01:21,220 --> 00:01:25,380
+So where it's actually going to go will just have it go kind of towards the bottom right.
+
+22
+00:01:25,570 --> 00:01:27,910
+So that's going to be at x is equal to 10.
+
+23
+00:01:27,970 --> 00:01:29,630
+And let's say Why is it to 500.
+
+24
+00:01:29,630 --> 00:01:32,370
+So over here excuse me on the bottom left not bottom right.
+
+25
+00:01:32,560 --> 00:01:38,430
+So X. again kind of shifted off a little let's say 10 and then up a little let's say five hundred.
+
+26
+00:01:38,710 --> 00:01:45,620
+So say 10 and 500 and then we have to do is provide what font face you chose.
+
+27
+00:01:45,640 --> 00:01:49,370
+So we say font face is equal to that variable with a find earlier.
+
+28
+00:01:49,600 --> 00:01:51,140
+And then you have font scale.
+
+29
+00:01:51,160 --> 00:01:53,560
+Essentially how large you want the font to be.
+
+30
+00:01:53,800 --> 00:01:55,410
+So you can say scale four.
+
+31
+00:01:55,540 --> 00:01:59,770
+That's usually something you have to experiment with depending on the size of your image then color
+
+32
+00:02:00,400 --> 00:02:05,650
+if we want this pure white will just say 2 5 5 2 5 5 on all the color channels.
+
+33
+00:02:05,650 --> 00:02:08,990
+And then the other parameters we can define our thickness.
+
+34
+00:02:09,040 --> 00:02:10,840
+So I think you actually want the lines.
+
+35
+00:02:10,870 --> 00:02:18,010
+Let's go ahead and choose a thickness or three and then the final one is line type and the line type.
+
+36
+00:02:18,010 --> 00:02:24,730
+If you say CB2 dot line and hit tab you'll notice you have a couple of options here.
+
+37
+00:02:24,750 --> 00:02:26,850
+Usually people just choose line A.
+
+38
+00:02:27,180 --> 00:02:31,610
+And to be perfectly honest I'm not actually familiar with anyone that uses the foreign aid because that
+
+39
+00:02:31,620 --> 00:02:36,350
+usually then just gets overwritten if you decide on thicknesses higher than 4 and 8.
+
+40
+00:02:36,360 --> 00:02:39,170
+So just use line underscore AAA.
+
+41
+00:02:39,310 --> 00:02:43,530
+And then finally we'll say show the resulting blank image.
+
+42
+00:02:43,840 --> 00:02:45,070
+Well go ahead and run that.
+
+43
+00:02:45,460 --> 00:02:52,060
+And now we should see Hello over here where it's bottom left of that text box is white where we said
+
+44
+00:02:52,060 --> 00:02:55,840
+it was B 10 or Ezekial 10 and Weikel to 500.
+
+45
+00:02:55,840 --> 00:02:58,000
+So that's how you can write text.
+
+46
+00:02:58,090 --> 00:03:02,380
+Finally to finish this off I want to show you how you can write your own custom polygons So sometimes
+
+47
+00:03:02,380 --> 00:03:05,800
+you're gonna have to have a custom polygon to wrap around a particular shape.
+
+48
+00:03:05,920 --> 00:03:09,120
+Maybe you want it to wrap around a stop sign or something.
+
+49
+00:03:09,130 --> 00:03:11,170
+Or you actually want to create a triangle.
+
+50
+00:03:11,170 --> 00:03:16,720
+Things are actually built in like rectangles or circles are going to create a new blank image.
+
+51
+00:03:17,520 --> 00:03:27,630
+In order to draw this well say a blank image is equal to zeros and we'll say shape is equal to five
+
+52
+00:03:27,980 --> 00:03:37,560
+top five by three and we'll have the data type B integer which can say 32 bit.
+
+53
+00:03:37,720 --> 00:03:43,430
+And now I have this new blank image.
+
+54
+00:03:43,470 --> 00:03:48,570
+So the first step we need to do to actually draw the polygon is to decide on the vertices.
+
+55
+00:03:48,570 --> 00:03:55,140
+So what we do here is to say vertices an array.
+
+56
+00:03:55,370 --> 00:03:57,720
+And notice here how we're going to have parentheses.
+
+57
+00:03:57,800 --> 00:04:04,080
+And then you have essentially what is a list of pairs.
+
+58
+00:04:04,270 --> 00:04:07,900
+So each of these pairs that we're going to be creating So here we have three.
+
+59
+00:04:07,920 --> 00:04:11,330
+And in fact let's add in one more will add in one more pair.
+
+60
+00:04:11,680 --> 00:04:13,490
+So here we have four pairs.
+
+61
+00:04:13,510 --> 00:04:16,660
+Each of these is going to contain an x and y coordinate.
+
+62
+00:04:16,690 --> 00:04:20,440
+So if I want my first point Ezekial to 100 and y equal to 300.
+
+63
+00:04:20,620 --> 00:04:23,110
+So that would be Ezekial to 100 here.
+
+64
+00:04:23,110 --> 00:04:26,060
+And why is it 300 maybe around here or mouses.
+
+65
+00:04:26,260 --> 00:04:29,680
+Let's create a couple of more and you can kind of play around with these.
+
+66
+00:04:29,680 --> 00:04:33,930
+Keep in mind if you have courtesies that kind of don't make sense or cross over each other you make
+
+67
+00:04:33,930 --> 00:04:36,970
+it an error or you make it kind of a weird polygon.
+
+68
+00:04:36,970 --> 00:04:45,730
+So the next will be at 200 and then we'll save 400 300 and then we'll say 200 to 400.
+
+69
+00:04:46,840 --> 00:04:50,630
+And that's the first argument there and we need to make sure that these are passed in as integers and
+
+70
+00:04:50,640 --> 00:04:52,210
+not converted into floats.
+
+71
+00:04:52,330 --> 00:04:58,760
+So we'll say as the second argument inside of this array and p. 32 for the D type and if you want we
+
+72
+00:04:58,760 --> 00:05:01,230
+can say the type equal to.
+
+73
+00:05:01,480 --> 00:05:02,790
+OK so what are we doing here.
+
+74
+00:05:02,800 --> 00:05:08,840
+We just passed in an array and the survey has the outside set of braces or brackets right there.
+
+75
+00:05:09,010 --> 00:05:16,600
+And then it's a list of pairs for the x and y coordinates 100 300 200 to 200 200 400 300 and 200 400
+
+76
+00:05:16,600 --> 00:05:17,330
+and so on.
+
+77
+00:05:17,520 --> 00:05:17,820
+OK.
+
+78
+00:05:17,860 --> 00:05:19,910
+So those are all over the C's.
+
+79
+00:05:20,010 --> 00:05:22,590
+Go ahead and run that and their integer types.
+
+80
+00:05:22,710 --> 00:05:24,690
+And this is where it gets a little strange.
+
+81
+00:05:24,690 --> 00:05:26,270
+There's one final step.
+
+82
+00:05:26,430 --> 00:05:30,270
+If you look at our actual vertices and we were to print that out.
+
+83
+00:05:30,660 --> 00:05:36,090
+It looks actually like it's in the correct format but open C-v is actually really particular as far
+
+84
+00:05:36,090 --> 00:05:39,920
+as the dimensions wants it actually wants these in three dimensions.
+
+85
+00:05:39,930 --> 00:05:45,540
+So if you take a look at the shape here it's currently in a four by two and we need to reshape this
+
+86
+00:05:45,540 --> 00:05:47,660
+to be in another set of dimensions.
+
+87
+00:05:47,670 --> 00:05:54,500
+So what you do is once you create this array of points we're going to basically cast it into three dimensions
+
+88
+00:05:54,510 --> 00:06:02,190
+for those color channels and we're going to say vertices reshape and you're going to pretty much always
+
+89
+00:06:02,190 --> 00:06:13,140
+use the following shape you'll say negative 1 1 2 and we're going to say points is equal to this reshaping.
+
+90
+00:06:13,180 --> 00:06:14,540
+So what does that actually do.
+
+91
+00:06:14,710 --> 00:06:16,450
+Well let's compare.
+
+92
+00:06:16,450 --> 00:06:22,870
+If I take a look at the shape of vertices versus the shape of points what that has essentially done
+
+93
+00:06:22,960 --> 00:06:26,470
+is added a third dimension which is just one.
+
+94
+00:06:26,650 --> 00:06:29,790
+So it's keeping the same information just adding another set of braces.
+
+95
+00:06:29,800 --> 00:06:32,920
+And in fact if you check out what this looks like here we have vertices.
+
+96
+00:06:32,920 --> 00:06:34,730
+Notice that there's two brackets.
+
+97
+00:06:34,900 --> 00:06:38,050
+Well because CB2 requires everything in a certain shape.
+
+98
+00:06:38,050 --> 00:06:42,730
+If you take a look at the points it's going to look extremely similar except now there's another set
+
+99
+00:06:42,730 --> 00:06:44,630
+of braces for that third dimension.
+
+100
+00:06:44,890 --> 00:06:50,380
+That's essentially so the color channels actually make sense being transformed from two points into
+
+101
+00:06:50,410 --> 00:06:53,850
+three points so there's a point for each color channel.
+
+102
+00:06:53,860 --> 00:06:58,790
+OK so you'll always be able to use this reshape negative 1 1 and 2.
+
+103
+00:06:58,870 --> 00:07:02,280
+Don't worry too much about understanding this reshaping just know that you have to do it.
+
+104
+00:07:02,410 --> 00:07:06,780
+Otherwise open C-v is going to complain when you actually call C-v to Pollio lines.
+
+105
+00:07:07,090 --> 00:07:12,770
+So we say CB2 polyline as you pass in the blank image.
+
+106
+00:07:13,130 --> 00:07:19,190
+And then here's again where it gets a little strange as a second parameter you pass in a list of the
+
+107
+00:07:19,190 --> 00:07:20,650
+points array.
+
+108
+00:07:20,660 --> 00:07:22,440
+So it's kind of a two step process here.
+
+109
+00:07:22,490 --> 00:07:27,400
+You have to reshape those vertices and then you have to pass it in as a list.
+
+110
+00:07:27,420 --> 00:07:32,240
+So quite strange the formatting of CB2 polyline but that's just the way it is.
+
+111
+00:07:32,240 --> 00:07:38,860
+And then if you want it to be close off you just need to say is closed equal to true.
+
+112
+00:07:39,110 --> 00:07:42,150
+So if you want more information about the parameters you can always do shift.
+
+113
+00:07:42,350 --> 00:07:48,580
+But is close is basically a flag indicating whether the drawn pile lines are closed or not.
+
+114
+00:07:48,600 --> 00:07:52,350
+OK so we do want this closed and then we get to choose a color.
+
+115
+00:07:52,350 --> 00:07:52,790
+Let's go ahead.
+
+116
+00:07:52,790 --> 00:07:54,030
+Just make it red.
+
+117
+00:07:54,150 --> 00:08:00,300
+So say 100 percent on the red channel and then zero on the other two and then we'll say thickness is
+
+118
+00:08:00,300 --> 00:08:02,290
+equal to 5.
+
+119
+00:08:03,060 --> 00:08:06,720
+And then we'll just show that image you'll see him show.
+
+120
+00:08:06,790 --> 00:08:08,950
+Let's go ahead and show that blank image.
+
+121
+00:08:09,160 --> 00:08:10,030
+Run that.
+
+122
+00:08:10,330 --> 00:08:12,810
+And then we can see the polygon that we just created.
+
+123
+00:08:12,820 --> 00:08:14,920
+So let's go ahead and check if when the disease makes sense.
+
+124
+00:08:14,950 --> 00:08:15,590
+Here's one.
+
+125
+00:08:15,610 --> 00:08:20,980
+And it looks like it's at a 100 300 which happens to be the point we chose here 100 300.
+
+126
+00:08:20,980 --> 00:08:23,050
+Let's check that excellent 200 200.
+
+127
+00:08:23,080 --> 00:08:25,970
+Well if we say 200 and then go up to 200 here.
+
+128
+00:08:26,140 --> 00:08:27,920
+Well there we have it there is that point.
+
+129
+00:08:28,180 --> 00:08:28,660
+OK.
+
+130
+00:08:28,900 --> 00:08:32,720
+So that's the basics of writing text including your own custom polygons.
+
+131
+00:08:32,760 --> 00:08:36,580
+We won't really be creating our own custom polygons that often throughout the course but something we
+
+132
+00:08:36,580 --> 00:08:41,740
+will definitely be doing is trying rectangles around objects specifically when we're working with things
+
+133
+00:08:41,740 --> 00:08:43,090
+like object detection.
+
+134
+00:08:43,300 --> 00:08:47,290
+For example if you're trying to detect that there's a face and an image usually you draw a rectangle
+
+135
+00:08:47,290 --> 00:08:47,890
+around it.
+
+136
+00:08:48,100 --> 00:08:54,100
+So the ones you really want to be familiar with are up here where we have C-v to scroll up a little
+
+137
+00:08:54,100 --> 00:08:55,190
+bit rectangle.
+
+138
+00:08:55,210 --> 00:09:00,400
+This is the one you really have to know well and it's basically just passing the image top left corner
+
+139
+00:09:00,610 --> 00:09:03,540
+bottom right corner color and then thickness.
+
+140
+00:09:03,550 --> 00:09:09,340
+So if you understand this idea of CB2 rectangle you're pretty much good to go on trying to expand on
+
+141
+00:09:09,340 --> 00:09:10,420
+this in the next lecture.
+
+142
+00:09:10,420 --> 00:09:12,910
+We're going to discuss had actually draw with your mouse.
+
+143
+00:09:12,940 --> 00:09:17,990
+So everything so far has been static but often you want to interact with images or interact with video.
+
+144
+00:09:18,160 --> 00:09:22,360
+So we're going to be adding functionality with something called event choices which is a really cool
+
+145
+00:09:22,360 --> 00:09:24,870
+feature of open C-v that I'm excited to get to.
+
+146
+00:09:25,030 --> 00:09:25,490
+OK.
+
+147
+00:09:25,630 --> 00:09:27,820
+Do you have any questions posed to community forums.
+
+148
+00:09:27,820 --> 00:09:29,410
+If not we'll see you at the next lecture.
+

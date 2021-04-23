@@ -1,0 +1,780 @@
+﻿1
+00:00:05,240 --> 00:00:06,080
+Welcome back.
+
+2
+00:00:06,080 --> 00:00:09,050
+Let's go over the solutions for the previous assessment.
+
+3
+00:00:09,050 --> 00:00:11,100
+I'm going to open up Jupiter notebook and get started.
+
+4
+00:00:12,080 --> 00:00:12,370
+OK.
+
+5
+00:00:12,380 --> 00:00:16,950
+Here I am at the image basics assessment notebook and we're going to get started with a couple of imports
+
+6
+00:00:16,950 --> 00:00:18,370
+that we're going to be needing.
+
+7
+00:00:18,440 --> 00:00:21,510
+We'll import CB2 important umpires.
+
+8
+00:00:21,520 --> 00:00:22,980
+MP In case we need that.
+
+9
+00:00:23,030 --> 00:00:27,120
+And then finally since we know we're going to be displaying images we'll import that public thought
+
+10
+00:00:27,160 --> 00:00:32,290
+high plot as guilty and then map plot live in line.
+
+11
+00:00:33,420 --> 00:00:41,100
+We'll run that and then we'll read in the image sole reason with to him read it and we're going to do
+
+12
+00:00:41,100 --> 00:00:43,240
+here is right now it's in the data folder.
+
+13
+00:00:43,260 --> 00:00:48,060
+So say data and you should be able to again tap out to complete this if you're doing it correctly.
+
+14
+00:00:48,270 --> 00:00:52,440
+Dog backpack depending on where you are you may have to go back up a directory.
+
+15
+00:00:52,470 --> 00:00:54,250
+So say about thought forward slash.
+
+16
+00:00:54,300 --> 00:00:59,330
+Again it all depends on where this notebook actually is and where the data folder actually is.
+
+17
+00:00:59,340 --> 00:01:05,400
+Now if I were to directly show this with him show recall that the order of the colors is going to be
+
+18
+00:01:05,400 --> 00:01:08,720
+wrong so the blue and red channel are actually now switched.
+
+19
+00:01:08,730 --> 00:01:13,660
+So what we need to do is convert that using the CB2 CVT color function.
+
+20
+00:01:13,740 --> 00:01:15,900
+We're going to come down here and do that.
+
+21
+00:01:15,930 --> 00:01:18,220
+I'm going to say A I m g.
+
+22
+00:01:18,450 --> 00:01:28,080
+Red Green Blue is equal to CV to the CV t color and will take in the original image you read in and
+
+23
+00:01:28,080 --> 00:01:36,450
+then convert it by using color underscore blue green red to red green blue and now will display that
+
+24
+00:01:36,480 --> 00:01:41,110
+updated image image show R G B.
+
+25
+00:01:41,520 --> 00:01:45,000
+And when you run that you should now have this dog in the backpack picture.
+
+26
+00:01:45,000 --> 00:01:49,630
+Keep in mind I'm really zoomed in so yours may appear slightly smaller.
+
+27
+00:01:49,780 --> 00:01:53,900
+The next task is to flip the image upside down and display in The Notebook.
+
+28
+00:01:54,090 --> 00:02:01,010
+So we can do that is I can SOORLEY I can really just say new image is equal to image.
+
+29
+00:02:01,010 --> 00:02:08,590
+RG I can make a copy of it so I'm going to make a copy and then flip that copy so it will say new image
+
+30
+00:02:08,980 --> 00:02:14,880
+is equal to CB2 to flip that new image.
+
+31
+00:02:14,890 --> 00:02:18,490
+And the reason I created a new image was just because I didn't want to mess around with the original
+
+32
+00:02:18,490 --> 00:02:20,460
+copy and excellently flip the original.
+
+33
+00:02:20,830 --> 00:02:25,710
+So if you want to actually flip it upside down then we passen zero.
+
+34
+00:02:25,920 --> 00:02:27,750
+So I can say Pulte show.
+
+35
+00:02:28,090 --> 00:02:32,750
+So that new image and there is the dog backpack image upside down.
+
+36
+00:02:32,800 --> 00:02:38,680
+The next task was to draw an empty red rectangle around the dog's face and display the image in the
+
+37
+00:02:38,680 --> 00:02:39,940
+notebook.
+
+38
+00:02:39,940 --> 00:02:43,670
+Now we can just kind of guesstimate where the actual points are.
+
+39
+00:02:43,690 --> 00:02:45,520
+We just need to points of a rectangle.
+
+40
+00:02:45,700 --> 00:02:52,600
+So it looks like the start of the dog's face on the top left should be around maybe 250 400 ish maybe
+
+41
+00:02:52,600 --> 00:02:57,600
+200 380 a little less than 400 maybe a little less than 250.
+
+42
+00:02:57,610 --> 00:03:00,070
+And again we're just guesstimating here.
+
+43
+00:03:00,070 --> 00:03:03,810
+So I'll say Point 1 is equal to the coordinates.
+
+44
+00:03:03,880 --> 00:03:08,540
+And I'm just using the solutions here but your values may be slightly different.
+
+45
+00:03:10,250 --> 00:03:15,610
+So it's the top left corner and then point two for the bottom right corner that should be probably around
+
+46
+00:03:15,620 --> 00:03:18,150
+if I'm just guesstimating here a little over 500.
+
+47
+00:03:18,320 --> 00:03:21,170
+And then somewhere around 700 for the Y.
+
+48
+00:03:21,200 --> 00:03:25,080
+So let's just say 600 700.
+
+49
+00:03:25,370 --> 00:03:29,270
+So I have my two points the top left corner and the bottom right corner.
+
+50
+00:03:29,300 --> 00:03:38,650
+So I will do is I will say to rectangle and then grab my original red green blue image and then say
+
+51
+00:03:38,660 --> 00:03:42,080
+Point 1 is equal to point one.
+
+52
+00:03:42,080 --> 00:03:44,860
+Point two is equal to point two.
+
+53
+00:03:44,870 --> 00:03:49,040
+So we're just saying the parameters here that we defined earlier and then for the color.
+
+54
+00:03:49,130 --> 00:03:54,800
+Now that it's been corrected the red channel is first so I'll say two five five for red and then we
+
+55
+00:03:54,800 --> 00:03:58,870
+have green blue zeros and it's up to you what or if thickness you want to do.
+
+56
+00:03:58,970 --> 00:04:02,540
+You should add some thickness to it otherwise you won't really be able to see the rectangle so I would
+
+57
+00:04:02,540 --> 00:04:03,630
+say thickness 10.
+
+58
+00:04:03,920 --> 00:04:10,810
+And let's show the results that will say realty show image red green blue run that and I get to see
+
+59
+00:04:10,810 --> 00:04:14,710
+the rectangle around the dog's face so that all worked out.
+
+60
+00:04:14,910 --> 00:04:18,810
+Up next we want to draw a blue triangle in the middle of the image.
+
+61
+00:04:18,810 --> 00:04:24,030
+Now the size and angles of the triangle itself is kind of up to you but probably the easiest to do is
+
+62
+00:04:24,030 --> 00:04:28,920
+an equilateral triangle here since these bottom points of the triangle are sharing a value here around
+
+63
+00:04:28,920 --> 00:04:30,420
+the Y.
+
+64
+00:04:30,420 --> 00:04:33,230
+Let's go ahead and figure how out how we can do this.
+
+65
+00:04:33,240 --> 00:04:43,220
+So the first thing to do is set up our vertices and then we're going to have to choose our points.
+
+66
+00:04:43,220 --> 00:04:46,330
+So in this case we're going to have three sets of points.
+
+67
+00:04:46,430 --> 00:04:49,980
+So let's go ahead and set up those three Brace's.
+
+68
+00:04:50,000 --> 00:04:51,650
+So first go to this first point.
+
+69
+00:04:51,650 --> 00:04:55,990
+Over here I would say this point is around 250 and 700.
+
+70
+00:04:56,030 --> 00:05:00,390
+So say 250 long x 700 along Y.
+
+71
+00:05:00,650 --> 00:05:05,150
+And then if we go straight over to the next point the bottom right point of this triangle that's actually
+
+72
+00:05:05,150 --> 00:05:07,990
+going to have the same values of 700.
+
+73
+00:05:08,030 --> 00:05:11,490
+So we'll go ahead and fill that in right out about 700.
+
+74
+00:05:11,600 --> 00:05:13,950
+And it's kind of up to you how far along you want to go.
+
+75
+00:05:14,120 --> 00:05:16,790
+It looks like this one goes around up to 600.
+
+76
+00:05:16,790 --> 00:05:18,720
+So we'll add that one as a point.
+
+77
+00:05:18,740 --> 00:05:23,240
+And then in the middle the top one well that can be basically right in the middle the image.
+
+78
+00:05:23,240 --> 00:05:30,410
+So for this one it's kind of up to you but let's go ahead and say around 425 and then kind of in the
+
+79
+00:05:30,410 --> 00:05:36,000
+middle it's around 400 again lots of different possible answers here.
+
+80
+00:05:36,020 --> 00:05:38,030
+So four to five and then 400.
+
+81
+00:05:38,090 --> 00:05:41,760
+Essentially just picking the x and y coordinates of these three points.
+
+82
+00:05:43,030 --> 00:05:47,770
+Now in order to make sure this works we should be casting this as an integer so we'll say.
+
+83
+00:05:47,790 --> 00:05:53,910
+And P. I.A. 32 bit sometimes depending on what version of an operating system you use.
+
+84
+00:05:54,030 --> 00:05:58,790
+If you don't pass in the data type here you make it an error because it doesn't understand that viruses
+
+85
+00:05:59,180 --> 00:06:00,400
+or floating point numbers.
+
+86
+00:06:00,440 --> 00:06:02,200
+So we'll keep them as integers here.
+
+87
+00:06:03,370 --> 00:06:07,300
+And if we check out our vertices it's essentially an array that looks like this.
+
+88
+00:06:07,480 --> 00:06:14,090
+But remember that open C-v is actually quite particular about what format the point should be in.
+
+89
+00:06:14,110 --> 00:06:20,920
+So if we actually check the shape of this it's three two and that's not the format that open CV wants.
+
+90
+00:06:20,920 --> 00:06:24,150
+So we're going to follow the same recipe that we showed earlier in the lecture.
+
+91
+00:06:24,280 --> 00:06:26,670
+And keep in mind I don't have these sort of recipes memorized.
+
+92
+00:06:26,680 --> 00:06:28,570
+I basically just reference my own notes here.
+
+93
+00:06:28,570 --> 00:06:31,020
+But we're going to reshape this too negative one.
+
+94
+00:06:31,320 --> 00:06:36,760
+One two and upon doing that for checkup the vertices.
+
+95
+00:06:37,090 --> 00:06:41,070
+Now they're organized with kind of an extra layer of dimension.
+
+96
+00:06:41,440 --> 00:06:45,720
+So now show the points that we reformatted and there we go.
+
+97
+00:06:45,760 --> 00:06:47,950
+So now we see there's an extra dimension there.
+
+98
+00:06:48,070 --> 00:06:52,720
+And if I check the shape of points now has three dimensions it's three by one by two.
+
+99
+00:06:52,720 --> 00:06:54,790
+That way I can match up kind of those color channels.
+
+100
+00:06:55,090 --> 00:06:55,540
+OK.
+
+101
+00:06:55,750 --> 00:06:57,490
+So we have point shape ready to go.
+
+102
+00:06:57,580 --> 00:07:04,030
+Let's actually now create the poly lines will say CB2 poly Alliance passen the image we want to draw
+
+103
+00:07:04,030 --> 00:07:04,860
+on this case.
+
+104
+00:07:04,880 --> 00:07:06,070
+Image R.G..
+
+105
+00:07:06,520 --> 00:07:09,470
+And then as a list passen the points again.
+
+106
+00:07:09,590 --> 00:07:15,000
+Another weird quirk of open C-v we'll say is closed equal to true.
+
+107
+00:07:15,010 --> 00:07:20,360
+So we actually close that up and connect those points and then the color we want it to be blue.
+
+108
+00:07:20,380 --> 00:07:25,210
+So will say red is 0 green is zero and blue is for value 2 5 5.
+
+109
+00:07:25,480 --> 00:07:28,690
+And we can go ahead and give this what are of thickness we want let's make that triangle pretty thick.
+
+110
+00:07:28,690 --> 00:07:32,590
+That way we can see easily and then let's display the result.
+
+111
+00:07:32,590 --> 00:07:35,320
+So we do that on the image.
+
+112
+00:07:35,320 --> 00:07:37,140
+I m g r g b.
+
+113
+00:07:37,270 --> 00:07:41,560
+So when I run that and I scroll down now I get to see that blue triangle.
+
+114
+00:07:41,560 --> 00:07:46,910
+Keep mine that red rectangle is actually still there from the previous drawing up here.
+
+115
+00:07:47,050 --> 00:07:52,270
+So if you want to get rid of that you just need to read in the image file again or just run this line
+
+116
+00:07:52,270 --> 00:07:52,670
+again.
+
+117
+00:07:52,690 --> 00:07:58,020
+If we scroll all the way back up here remember we still have this line right here.
+
+118
+00:07:58,270 --> 00:08:06,940
+So if you copy this scroll down and then enter it right above that cell and you rerun this.
+
+119
+00:08:06,970 --> 00:08:12,650
+That basically reads in that original image fixes the color and set resets the image R.G. be.
+
+120
+00:08:12,760 --> 00:08:16,170
+So if you look at the solutions notebook that line is also included there.
+
+121
+00:08:16,690 --> 00:08:17,150
+OK.
+
+122
+00:08:17,410 --> 00:08:22,730
+So now we have the last bonus task and it is can you figure out how to fill in this triangle.
+
+123
+00:08:22,810 --> 00:08:27,040
+So you had to do a little bit of searching and if you click on this link it'll take you to the link
+
+124
+00:08:27,040 --> 00:08:33,040
+called Fill poly and hopefully are able to figure out that Phil Polley essentially works at the exact
+
+125
+00:08:33,040 --> 00:08:33,820
+same point.
+
+126
+00:08:35,150 --> 00:08:37,970
+As polyline except it will actually fill it out.
+
+127
+00:08:37,970 --> 00:08:43,190
+So notice here Python's CB2 Phil Polley the image the points the color essentially telling you what
+
+128
+00:08:43,190 --> 00:08:44,370
+the function should do.
+
+129
+00:08:44,700 --> 00:08:47,640
+So let's come back here and actually then fill that out.
+
+130
+00:08:47,690 --> 00:08:54,780
+So we're going to take essentially what we have a peer copy that and then paste it here.
+
+131
+00:08:55,480 --> 00:09:03,130
+Except now we're going to do is instead of poly lines I'm just going to say fill poly and then the thickness
+
+132
+00:09:03,130 --> 00:09:08,470
+parameter no longer makes sense because we know it's filled in as well as he is close parameter.
+
+133
+00:09:08,470 --> 00:09:13,180
+If you take a look back at the drawing function Phil Polley doesn't actually have is close because obviously
+
+134
+00:09:13,180 --> 00:09:16,030
+if you're filling it it tends to be closed.
+
+135
+00:09:16,060 --> 00:09:18,820
+So let's actually try running this and see if this works for us.
+
+136
+00:09:19,780 --> 00:09:23,390
+So if you run that you should see a filled in blue triangle.
+
+137
+00:09:23,710 --> 00:09:24,380
+OK.
+
+138
+00:09:24,820 --> 00:09:30,730
+So this last task you may need to run as a script depending on what your operating system is.
+
+139
+00:09:30,730 --> 00:09:35,460
+If you're on a Mac OS or Linux you're probably should run this as a separate script away from this notebook.
+
+140
+00:09:35,470 --> 00:09:39,610
+I don't know Windows right now so I don't really have those issues are going to put it all in one cell.
+
+141
+00:09:39,640 --> 00:09:46,300
+This task is to create a script that opens the picture the dog back picture and allows you to draw empty
+
+142
+00:09:46,300 --> 00:09:49,490
+red circles wherever you click the right mouse button.
+
+143
+00:09:49,810 --> 00:09:52,860
+So let's go ahead and do our imports here.
+
+144
+00:09:53,100 --> 00:10:00,280
+We'll redo everything just in case you intend running this as superscripts important up-I and P and
+
+145
+00:10:00,280 --> 00:10:08,320
+then we're going to create a function called create circle and what this does is it takes in the events
+
+146
+00:10:08,830 --> 00:10:16,380
+the X and Y location of that particular event and then flags and parameters and we want the event to
+
+147
+00:10:16,380 --> 00:10:18,470
+happen when we click the right mouse button.
+
+148
+00:10:18,480 --> 00:10:26,620
+So we'll see if the events was equal to CB2 events and if you hit tab here you should be able to find
+
+149
+00:10:27,160 --> 00:10:29,200
+a right mouse button if you start exploring.
+
+150
+00:10:29,260 --> 00:10:30,240
+And in fact it's right here.
+
+151
+00:10:30,250 --> 00:10:34,980
+It's our Button-Down just like the last one was L-band down for left mouse button.
+
+152
+00:10:35,230 --> 00:10:45,330
+And then we'll go ahead and add a circle close say CB2 circle image and then X come A-Y and let's go
+
+153
+00:10:45,330 --> 00:10:47,470
+ahead and give this a radius of 100.
+
+154
+00:10:47,610 --> 00:10:49,080
+We want a read.
+
+155
+00:10:49,170 --> 00:10:53,600
+So we'll say 0 0 2 5 5.
+
+156
+00:10:53,670 --> 00:10:59,410
+Since we're dealing right now with open CV remember it's ordering is blue green red.
+
+157
+00:10:59,430 --> 00:11:00,930
+So it leaves 2 5 5 here.
+
+158
+00:11:01,320 --> 00:11:08,800
+And if you want it filled in we can say negative 1 if we want to go thicknesse we can say something
+
+159
+00:11:08,800 --> 00:11:10,560
+like thickness is equal to 10.
+
+160
+00:11:10,570 --> 00:11:13,250
+So kind of up to you what you want to do there.
+
+161
+00:11:13,480 --> 00:11:17,320
+I think we said MT's red circle so we'll just say thickness is equal to 10.
+
+162
+00:11:17,650 --> 00:11:22,420
+So there is our great circle and now we need to set up the connections and open up the image.
+
+163
+00:11:22,570 --> 00:11:26,180
+So we'll see image is equal to.
+
+164
+00:11:26,390 --> 00:11:30,600
+And in this case will say CB2 image read.
+
+165
+00:11:30,880 --> 00:11:38,720
+And I'm going to read in from data that backpack image previously we were just making our own images
+
+166
+00:11:38,720 --> 00:11:39,570
+with an umpire.
+
+167
+00:11:39,590 --> 00:11:41,560
+But just going to read this one in.
+
+168
+00:11:41,820 --> 00:11:47,050
+Remember we need to create a named window so window name.
+
+169
+00:11:47,240 --> 00:11:49,570
+Let's go ahead and just have it be dog.
+
+170
+00:11:49,700 --> 00:11:54,210
+So that's the same name we're going to assign with the set.
+
+171
+00:11:55,040 --> 00:11:58,110
+Mouse call back.
+
+172
+00:11:58,250 --> 00:12:06,200
+Will sign it to dog and then we'll connect it to our draw circle function and then finally let's go
+
+173
+00:12:06,200 --> 00:12:10,010
+ahead and set up the while loop will continue to display this image we'll see.
+
+174
+00:12:10,040 --> 00:12:20,460
+While true CV to him Show will show a window called dog with the image that we read in and then finally
+
+175
+00:12:20,460 --> 00:12:28,790
+we have our if CB2 that waky with some arbitrary value 20 milliseconds ampersand.
+
+176
+00:12:28,840 --> 00:12:33,160
+Remember it's 0 x f f is equal to 27.
+
+177
+00:12:33,180 --> 00:12:34,310
+The escape key.
+
+178
+00:12:34,440 --> 00:12:40,660
+Go ahead and break out of that loop and then finally just for safety will destroy all the windows.
+
+179
+00:12:40,670 --> 00:12:43,160
+Ok so very similar to what we did in the past.
+
+180
+00:12:43,160 --> 00:12:46,640
+Basically the only difference is the event it's a right button down.
+
+181
+00:12:46,760 --> 00:12:51,740
+And instead of creating our own image in Ampyra is reading it in.
+
+182
+00:12:52,100 --> 00:12:54,370
+Let's run this and make sure it works.
+
+183
+00:12:54,470 --> 00:12:58,580
+Looks like we may have draw circles not the fine loops I said create circle.
+
+184
+00:12:58,580 --> 00:13:03,980
+So let's go ahead and say create a circle OK run that again.
+
+185
+00:13:03,980 --> 00:13:05,060
+It looks like it's running.
+
+186
+00:13:05,060 --> 00:13:07,820
+So let me look down here see if I have something.
+
+187
+00:13:07,820 --> 00:13:09,000
+So there's a cute dog.
+
+188
+00:13:09,080 --> 00:13:13,580
+And as I click on the right mouse button there I get to see the empty circles.
+
+189
+00:13:13,780 --> 00:13:14,290
+OK.
+
+190
+00:13:14,450 --> 00:13:16,510
+So it looks like everything is working.
+
+191
+00:13:16,520 --> 00:13:17,300
+Do you have any questions.
+
+192
+00:13:17,300 --> 00:13:18,480
+Definitely check out the solutions.
+
+193
+00:13:18,480 --> 00:13:19,040
+No put.
+
+194
+00:13:19,160 --> 00:13:23,660
+There's a lot more explanatory comments in it and feel free to post the Kewney forums.
+
+195
+00:13:23,660 --> 00:13:26,030
+Thanks and we'll see you at the next section of the course.
+
